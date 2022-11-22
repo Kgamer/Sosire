@@ -1,6 +1,6 @@
 {
-  "name": "sosire",
-  "version": "1.0.9",
+  "name": "Your Bot Name",
+  "version": "Your Bot version",
   "description": "",
   "main": "src/index.js",
   "scripts": {

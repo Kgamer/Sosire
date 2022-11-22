@@ -16,3 +16,5 @@ Free to use
 - More coming...
 
 *Credits are appriciated*
+
+Create an Issue if you need help or join the [Discord](https://discord.gg/anhCtrfS5X)

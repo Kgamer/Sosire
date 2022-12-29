@@ -1,0 +1,23 @@
+Todo: 
+
+    - mute // mute an user (require database)
+    - lock //lockdown a channel
+    - Unban //unban an user
+    
+Writing (aka copying and pasting):
+    - set up a database
+    
+Done:
+    - Github //the github reps of the bot
+    - About //info about the bot
+    - Ban //ban an user
+    - kick //kick an user
+    - say //say something
+    - 8ball //decide
+    - who // user info
+    serverinfo // server info
+    - meme // send meme
+    - flip //flip a coin
+    - rock paper scissor // play rps with the bot
+    - purge //delete messages
+    - bug //report a bug to the developers

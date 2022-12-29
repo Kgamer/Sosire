@@ -1,6 +1,6 @@
 {
-  "name": "Your Bot Name",
-  "version": "Your Bot version",
+  "name": "sosire",
+  "version": "1.0.9",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -14,8 +14,10 @@
     "@sapphire/framework": "^3.1.3",
     "@sapphire/plugin-subcommands": "^3.2.2",
     "@sapphire/utilities": "^3.10.1",
+    "discord-memes.js": "^1.1.17",
     "discord.js": "^13.11.0",
+    "memer-api": "^4.0.2",
     "nodemon": "^2.0.20",
-    "random-jokes-api": "^1.5.9"
+    "node-fetch": "^2.6.6"
   }
 }

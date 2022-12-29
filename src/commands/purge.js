@@ -22,8 +22,11 @@ class PurgeCommand extends Command {
   }
   async chatInputRun(interaction) {
     const num = interaction.options.getInteger("number", true);
-    interaction.channel.bulkDelete(num)
-    let msg = await interaction.reply({content: `Deleted **${num}** message(s)`, ephemeral: true})
+    interaction.channel.bulkDelete(num);
+    let msg = await interaction.reply({
+      content: `Deleted **${num}** message(s)`,
+      ephemeral: true,
+    });
   }
 }
 

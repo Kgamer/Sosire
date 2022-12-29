@@ -34,7 +34,7 @@ class BallCommand extends Command {
     ];
     var randomNumber = Math.floor(Math.random() * textArray.length);
     await interaction.reply(
-      `You asked: "${argument}" The bot said: "${textArray[randomNumber]}"`
+      `You asked: "${argument}" 8ball said: "${textArray[randomNumber]}"`
     );
   }
 }

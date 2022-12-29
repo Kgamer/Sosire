@@ -1,6 +1,5 @@
 const { isMessageInstance } = require("@sapphire/discord.js-utilities");
 const { Command } = require("@sapphire/framework");
-const { Subcommand } = require("@sapphire/plugin-subcommands");
 const { MessageEmbed } = require("discord.js");
 
 class WhoCommand extends Command {

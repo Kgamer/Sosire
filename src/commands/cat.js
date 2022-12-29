@@ -4,28 +4,23 @@ const { Subcommand } = require("@sapphire/plugin-subcommands");
 const fetch = require("node-fetch");
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
-class MemeCommand extends Command {
+class CatCommand extends Command {
   constructor(context, options) {
     super(context, { ...options });
   }
 
   registerApplicationCommands(registry) {
     registry.registerChatInputCommand((builder) =>
-      builder.setName("meme").setDescription("haha funny memes")
+      builder
+        .setName("cat")
+        .setDescription("Cat pictures, the legendary of internet")
     );
   }
-
+  //send a first reply
   async chatInputRun(interaction) {
-    const response = await fetch("https://reddit.com/r/dankmemes/random/.json");
+    const response = await fetch("https://reddit.com/r/catpics/random/.json");
     const body = await response.json();
     let meme = body[0].data.children[0].data;
-    const row = new MessageActionRow() // Prettier
-      .addComponents(
-        new MessageButton() // Prettier
-          .setStyle("LINK")
-          .setURL(`https://reddit.com${meme.permalink}`)
-          .setLabel("View meme")
-      );
     const embed = new MessageEmbed() // Prettier
       .setColor("RANDOM")
       .setTitle(meme.title)
@@ -40,10 +35,10 @@ class MemeCommand extends Command {
           size: 2048,
         }),
       });
-    interaction.reply({ embeds: [embed], components: [row] });
+    interaction.reply({ embeds: [embed] });
   }
 }
 
 module.exports = {
-  MemeCommand,
+  CatCommand,
 };
